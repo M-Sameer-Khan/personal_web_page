@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vlogs - M. Sameer Khan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <style>
+        .vlogs-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .video-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .video-info {
+            padding: 1.5rem;
+        }
+        .video-info h3 {
+            margin: 0 0 0.5rem 0;
+            color: #2c3e50;
+        }
+        .video-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .back-to-home {
+            display: inline-block;
+            margin-top: 2rem;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 500;
+        }
+        .back-to-home:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MSK</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="vlogs.html" class="active">Vlogs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="vlogs-container">
+        <h1 class="section-title">My Vlogs</h1>
+        
+        <div class="videos-grid">
+            <!-- Vlog 1 -->
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/RbhDdu7wx_8" 
+                            title="My Vlog 1" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h3>My Vlog 1</h3>
+                    <p class="video-description">Check out my latest vlog where I share my experiences and insights.</p>
+                </div>
+            </div>
+
+            <!-- Vlog 2 -->
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/mw1SidBcVV0" 
+                            title="My Vlog 2" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h3>My Vlog 2</h3>
+                    <p class="video-description">Join me in this exciting vlog where I explore new ideas and share my journey.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="youtube-cta">
+            <p>For more videos, visit my <a href="https://www.youtube.com/@SameerKhanVlogger" target="_blank" rel="noopener noreferrer">YouTube Channel <i class="fab fa-youtube"></i></a></p>
+        </div>
+
+        <a href="index.html" class="back-to-home">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> M. Sameer Khan. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@SameerKhanVlogger" target="_blank" rel="noopener noreferrer" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/noughty.sameer.98" target="_blank" rel="noopener noreferrer" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
