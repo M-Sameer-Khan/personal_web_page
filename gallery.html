@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - M. Sameer Khan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/gallery.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MSK</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="vlogs.html">Vlogs</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="gallery-container">
+        <h1 class="section-title">Photo Gallery</h1>
+        
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+        
+        <div class="gallery-grid">
+            <!-- Personal Photo 1 -->
+            <div class="gallery-item" data-category="travel">
+                <img src="Photos for Gallery/171011427_1585598868302747_5712949295648350661_n.jpg" alt="Travel Adventure">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Adventure Time</h3>
+                        <p>Exploring new destinations</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 2 -->
+            <div class="gallery-item" data-category="nature">
+                <img src="Photos for Gallery/184860436_1607983649397602_9096804731329745075_n.jpg" alt="Nature Beauty">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Nature's Wonder</h3>
+                        <p>Beauty in simplicity</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 3 -->
+            <div class="gallery-item" data-category="events">
+                <img src="Photos for Gallery/190705512_1625828414279792_5300485725509331508_n.jpg" alt="Special Event">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Memorable Day</h3>
+                        <p>Celebrating special moments</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 4 -->
+            <div class="gallery-item" data-category="travel">
+                <img src="Photos for Gallery/468995608_2560644710798153_2900877028503493889_n.jpg" alt="Travel Destination">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Journey</h3>
+                        <p>Discovering new places</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 5 -->
+            <div class="gallery-item" data-category="nature">
+                <img src="Photos for Gallery/470202870_2574714916057799_4727201542609254004_n.jpg" alt="Natural Beauty">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Serene Nature</h3>
+                        <p>Peaceful moments in nature</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 6 -->
+            <div class="gallery-item" data-category="events">
+                <img src="Photos for Gallery/476978669_2614962395366384_5426369984426015630_n.jpg" alt="Celebration">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Celebration</h3>
+                        <p>Joyful moments with friends</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 7 -->
+            <div class="gallery-item" data-category="travel">
+                <img src="Photos for Gallery/481270034_2634988306697126_2467846213302763776_n.jpg" alt="Travel Adventure">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Mountain View</h3>
+                        <p>Breathtaking landscapes</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 8 -->
+            <div class="gallery-item" data-category="nature">
+                <img src="Photos for Gallery/481681186_2634988543363769_7534140125909390107_n.jpg" alt="Nature">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Natural Beauty</h3>
+                        <p>Nature's artwork</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 9 -->
+            <div class="gallery-item" data-category="events">
+                <img src="Photos for Gallery/482239797_2644935935702363_3197026878730562644_n.jpg" alt="Special Occasion">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Special Occasion</h3>
+                        <p>Making memories</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 10 -->
+            <div class="gallery-item" data-category="travel">
+                <img src="Photos for Gallery/488656838_2666659706863319_2433648591096701973_n.jpg" alt="Travel Memory">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Travel Memory</h3>
+                        <p>Unforgettable journey</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 11 -->
+            <div class="gallery-item" data-category="nature">
+                <img src="Photos for Gallery/488903133_2667258550136768_2442128808007006994_n.jpg" alt="Natural Landscape">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Natural Landscape</h3>
+                        <p>Nature's masterpiece</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 12 -->
+            <div class="gallery-item" data-category="events">
+                <img src="Photos for Gallery/488940036_2666864333509523_1538438779609020955_n.jpg" alt="Celebration Time">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Celebration Time</h3>
+                        <p>Joyful moments</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 13 -->
+            <div class="gallery-item" data-category="travel">
+                <img src="Photos for Gallery/489102536_2666659730196650_3420393713211673826_n.jpg" alt="Adventure Awaits">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Adventure Awaits</h3>
+                        <p>New horizons</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 14 -->
+            <div class="gallery-item" data-category="nature">
+                <img src="Photos for Gallery/489997094_2671193119743311_7064533927103140337_n.jpg" alt="Nature's Beauty">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Nature's Beauty</h3>
+                        <p>Peaceful surroundings</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 15 -->
+            <div class="gallery-item" data-category="events">
+                <img src="Photos for Gallery/490361998_2673722689490354_4010035378601063108_n.jpg" alt="Special Event">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Special Event</h3>
+                        <p>Memorable gathering</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 16 -->
+            <div class="gallery-item" data-category="travel">
+                <img src="Photos for Gallery/490525445_2674405612755395_5108164864827163164_n.jpg" alt="Travel Experience">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Travel Experience</h3>
+                        <p>Exploring the world</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 17 -->
+            <div class="gallery-item" data-category="nature">
+                <img src="Photos for Gallery/491080553_2674414019421221_5257386106586430450_n.jpg" alt="Natural Wonder">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Natural Wonder</h3>
+                        <p>Nature's marvel</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 18 -->
+            <div class="gallery-item" data-category="events">
+                <img src="Photos for Gallery/494131878_2692171050978851_7036130310312099524_n.jpg" alt="Celebration">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Celebration</h3>
+                        <p>Happy moments</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 19 -->
+            <div class="gallery-item" data-category="travel">
+                <img src="Photos for Gallery/495642445_2702004719995484_5635652929885487392_n.jpg" alt="Travel Adventure">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Travel Adventure</h3>
+                        <p>Discovering new places</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 20 -->
+            <div class="gallery-item" data-category="nature">
+                <img src="Photos for Gallery/503782991_2733116366884319_4528014521304430351_n.jpg" alt="Nature's Beauty">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Nature's Beauty</h3>
+                        <p>Scenic views</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 21 -->
+            <div class="gallery-item" data-category="events">
+                <img src="Photos for Gallery/504562459_2731014087094547_560770830851997561_n.jpg" alt="Special Moment">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Special Moment</h3>
+                        <p>Cherished memories</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 22 -->
+            <div class="gallery-item" data-category="travel">
+                <img src="Photos for Gallery/504999766_2732029563659666_3801286575304373960_n.jpg" alt="Travel Destination">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Travel Destination</h3>
+                        <p>New adventures await</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 23 -->
+            <div class="gallery-item" data-category="nature">
+                <img src="Photos for Gallery/505440053_2734214433441179_9217323195818119181_n.jpg" alt="Natural View">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Natural View</h3>
+                        <p>Breathtaking scenery</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 24 -->
+            <div class="gallery-item" data-category="events">
+                <img src="Photos for Gallery/505544794_2733867446809211_5354768424942637909_n.jpg" alt="Special Event">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Special Event</h3>
+                        <p>Unforgettable moments</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Photo 25 -->
+            <div class="gallery-item" data-category="travel">
+                <img src="Photos for Gallery/505711313_2735446049984684_7247152748461386828_n.jpg" alt="Travel Experience">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Travel Experience</h3>
+                        <p>Exploring new horizons</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> M. Sameer Khan. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@SameerKhanVlogger" target="_blank" rel="noopener noreferrer" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/noughty.sameer.98" target="_blank" rel="noopener noreferrer" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Gallery filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
